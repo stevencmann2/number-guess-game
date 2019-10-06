@@ -1,37 +1,29 @@
-// establuish variables //
-const correct = 0;
-const incorrect = 0;
-    
+/*
+First, task is to generate inputs to be compared later 
+*/
 
-// get user input using key press //
-document.onkeyup = function (event) {
-    //determines which key ewas pressed//
-    const userGuess = event.key;
-    console.log()
+// math.ceil always rounds a number up to the laregest whole number/integer //
 
-        
+const randomNumber = Math.ceil(Math.random() * 1);
 
-    // array for computer choices
+// establish a conter with number assigned to the value
+let attemptCounter = 3;
 
-   
-    //randomly chooses a choice from the options array //
+// establish a for loop, where we will subtract the number of attempts from the counter
 
-    const computerDecision = [Math.floor.random() * 10 + 1];
-    
+for (attemptCounter; attemptCounter > 0; attemptCounter--) {
+
+    // parseInt takes a string and returns and integer in this loop
+    let userGuess = parseInt(prompt("Can you guess the number I am thinking of ? Hint: The number is between 1-10"))
+
+    //MAY NEED TO ADD CODE MISSING ABOVE
+
+    if(randomNumber === userGuess){
+       
+        console.log("you won")
 
 
-
-
-
-    //compares the useer and computer guesses and determines the results with a conditional //
-
-    if ((userGuess === computerDecision)) {
-        //correct is a const that is needed to be made on the page//
-        correct++ 
-    } else {
-        incorrect++
     }
-
 
 
 
