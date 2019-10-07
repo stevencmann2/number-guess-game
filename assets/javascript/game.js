@@ -21,12 +21,17 @@ console.log(randomNumber)
 
 //establish a user guess by keystroke
 document.onkeyup = function (event) {
-    const userGuess = event.key;
+    let userGuess = event.key;
+    let userInt=Number.parseInt(userGuess);
+
+    console.log(userGuess)
+    console.log(typeof userGuess)
+    console.log(typeof userInt)
     
 
 
     //this will determine the result of the game thruogh conditionals//
-    if ((userGuess === randomNumber)) {
+    if ((userInt === randomNumber)) {
         points++;
         pointsText.textContent = "Points: " + points;
 
