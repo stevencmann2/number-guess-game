@@ -6,6 +6,7 @@ body{
         margin: auto; 
        
     }
+
 header{
     display: block;
     margin: auto;
@@ -15,8 +16,6 @@ header{
     font-size: 30px;
     background-color: blueviolet;
     width: 80%;
-    
-    
 
 }
 
@@ -31,7 +30,6 @@ header{
     opacity: 0.9;
     text-align: center;
     line-height: 2;
- 
 
 }
 
@@ -39,14 +37,12 @@ header{
     display: block;
     background-color: blueviolet;
     margin:auto;
-    margin-top: 3%%;
+    margin-top: 3%;
     padding: 2%;
     width: 80%;
     opacity: 0.9;
     text-align: center;
     line-height: 2;
-}
-
 }
 
 #line1 {

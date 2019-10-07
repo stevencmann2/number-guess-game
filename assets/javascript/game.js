@@ -52,7 +52,6 @@ document.onkeyup = function (event) {
     if ((points == 3)) {
         //This will cause the page to reload
         confirm("Winner Winner Chicken Dinner! Let's Play Again!")
-
         location.reload()
 
     }
