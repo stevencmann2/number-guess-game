@@ -36,8 +36,8 @@ document.onkeyup = function (event) {
     } else {
         attempts++;
         attemptsLeft--;
-        attemptsLeftText.textContent = "Attempts Left:" + attemptsLeft;
-        attemptsText.textContent = "Attempts :" + attempts;
+        attemptsLeftText.textContent = "Attempts Left: " + attemptsLeft;
+        attemptsText.textContent = "Attempts: " + attempts;
         numbersGuessedArray.push(userInt);
         userPassGuessText.textContent = "Guesses so Far: " + numbersGuessedArray;
 
@@ -52,6 +52,7 @@ document.onkeyup = function (event) {
     if ((points == 3)) {
         //This will cause the page to reload
         confirm("Winner Winner Chicken Dinner! Let's Play Again!")
+
         location.reload()
 
     }

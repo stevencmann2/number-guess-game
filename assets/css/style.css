@@ -1,0 +1,54 @@
+body{
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        color: white;
+        background-color: red;
+        font-size: 18px;
+        margin: auto; 
+       
+    }
+header{
+    display: block;
+    margin: auto;
+    margin-top: 3%;  
+    padding: 2%;  
+    text-align: center;
+    font-size: 30px;
+    background-color: blueviolet;
+    width: 80%;
+    
+    
+
+}
+
+#box1 {
+    display: block;
+    background-color: blueviolet;
+    margin:auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 2%;
+    width: 70%;
+    opacity: 0.9;
+    text-align: center;
+    line-height: 2;
+ 
+
+}
+
+#container{
+    display: block;
+    background-color: blueviolet;
+    margin:auto;
+    margin-top: 3%%;
+    padding: 2%;
+    width: 80%;
+    opacity: 0.9;
+    text-align: center;
+    line-height: 2;
+}
+
+}
+
+#line1 {
+    text-align: center;
+}
