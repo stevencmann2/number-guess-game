@@ -15,9 +15,9 @@ const attemptsLeftText = document.getElementById("attemptslefttext")
 /*
 First, task is to generate inputs to be compared later 
 */
-// generates a number betwee 0-9//
+// generates a number between 0-9//
 
-const randomNumber = Math.floor(Math.random() * 10);
+let randomNumber = Math.floor(Math.random() * 10);
 console.log(randomNumber)
 
 //establish a user guess by keystroke
@@ -30,28 +30,30 @@ document.onkeyup = function (event) {
     if ((userInt === randomNumber)) {
         points++;
         pointsText.textContent = "Points: " + points;
-
+        
+        
     } else {
         attempts++;
         attemptsLeft--;
         attemptsLeftText.textContent = "Attempts Left:" + attemptsLeft;
         attemptsText.textContent = "Attempts :" + attempts;
         numbersGuessedArray.push(userInt);
-        console.log(userInt);
-
+        userPassGuessText.textContent = "Guesses so Far: " + numbersGuessedArray;
+       
     }
-    // this will trigger the end of the game if you exceed attempts or get too many points
-
+    // this will trigger the end of the game if you exceed attempts or get to 3 points
     if ((attemptsLeft === 0)) {
-        
-        alert("That's All Folks! Better Luck Next Time");
+        //this will cause the page to reload
+        confirm("That's All Folks! Better Luck Next Time, Let's Try Again!")
+        location.reload();
+       
     }
-
     if ((points == 3)) {
-        alert("Winnner Winner Chicken Dinner!");
+        //This will cause the page to reload
+        confirm("Winner Winner Chicken Dinner! Let's Play Again!")
+        location.reload()
+      
     }
-
-
 }
 
 
