@@ -1,4 +1,4 @@
-//Here is a list of the constants that will need to be added from 0//
+//Here is a list of the variables that will change as the game progresses//
 let points = 0;
 let attempts = 0;
 let attemptsLeft = 5;
@@ -13,25 +13,26 @@ const attemptsText = document.getElementById("attemptstext");
 const attemptsLeftText = document.getElementById("attemptslefttext")
 
 /*
-First, task is to generate inputs to be compared later 
-*/
-// generates a number between 0-9//
-
+First, task is to generate inputs to be compared later ;
+the function that generates a number between 0-9;
 let randomNumber = Math.floor(Math.random() * 10);
-console.log(randomNumber)
+*/
 
-//establish a user guess by keystroke
+//establishes a user guess by keystroke
 document.onkeyup = function (event) {
-    let userGuess = event.key;
-    let userInt=Number.parseInt(userGuess);
 
+    let userGuess = event.key;
+    //because the random fucntion is in the loop, it will constantly change on the kep press//
+    let randomNumber = Math.floor(Math.random() * 10);
+    let userInt = Number.parseInt(userGuess);
 
     //this will determine the result of the game thruogh conditionals//
+    //for every correct guess//
     if ((userInt === randomNumber)) {
         points++;
         pointsText.textContent = "Points: " + points;
-        
-        
+
+        //for every incorrect guess//
     } else {
         attempts++;
         attemptsLeft--;
@@ -39,20 +40,20 @@ document.onkeyup = function (event) {
         attemptsText.textContent = "Attempts :" + attempts;
         numbersGuessedArray.push(userInt);
         userPassGuessText.textContent = "Guesses so Far: " + numbersGuessedArray;
-       
+
     }
-    // this will trigger the end of the game if you exceed attempts or get to 3 points
+    // this will trigger the end of the game if you exceed attempts or get to 3 total points
     if ((attemptsLeft === 0)) {
         //this will cause the page to reload
         confirm("That's All Folks! Better Luck Next Time, Let's Try Again!")
         location.reload();
-       
+
     }
     if ((points == 3)) {
         //This will cause the page to reload
         confirm("Winner Winner Chicken Dinner! Let's Play Again!")
         location.reload()
-      
+
     }
 }
 
