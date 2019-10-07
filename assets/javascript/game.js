@@ -1,12 +1,13 @@
 //Here is a list of the constants that will need to be added from 0//
 let points = 0;
 let attempts = 0;
-let attemptsLeft = 5
+let attemptsLeft = 5;
+let numbersGuessedArray = [];
 
 // Here are the references to the text in the HTML dcoument //
 
 const directionsText = document.getElementById("directionstext");
-const userChoiceText = document.getElementById("pastguesstext");
+const userPassGuessText = document.getElementById("pastguesstext");
 const pointsText = document.getElementById("pointstext");
 const attemptsText = document.getElementById("attemptstext");
 const attemptsLeftText = document.getElementById("attemptslefttext")
@@ -24,11 +25,6 @@ document.onkeyup = function (event) {
     let userGuess = event.key;
     let userInt=Number.parseInt(userGuess);
 
-    console.log(userGuess)
-    console.log(typeof userGuess)
-    console.log(typeof userInt)
-    
-
 
     //this will determine the result of the game thruogh conditionals//
     if ((userInt === randomNumber)) {
@@ -40,6 +36,8 @@ document.onkeyup = function (event) {
         attemptsLeft--;
         attemptsLeftText.textContent = "Attempts Left:" + attemptsLeft;
         attemptsText.textContent = "Attempts :" + attempts;
+        numbersGuessedArray.push(userInt);
+        console.log(userInt);
 
     }
     // this will trigger the end of the game if you exceed attempts or get too many points
