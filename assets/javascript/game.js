@@ -14,14 +14,12 @@ const attemptsLeftText = document.getElementById("attemptslefttext")
 
 /*
 First, task is to generate inputs to be compared later ;
-the function that generates a number between 0-9;
-let randomNumber = Math.floor(Math.random() * 10);
-*/
+the function that generates a number between 0-9;*/
 
 //establishes a user guess by keystroke
 document.onkeyup = function (event) {
-
     let userGuess = event.key;
+    
     //because the random fucntion is in the loop, it will constantly change on the kep press//
     let randomNumber = Math.floor(Math.random() * 10);
     let userInt = Number.parseInt(userGuess);
@@ -61,46 +59,3 @@ document.onkeyup = function (event) {
 
 
 
-
-
-
-
-
-
-
-
-
-//document.getElementById("pastguess");
-
-//document.addEventListener('keyup', logKey);
-
-
-
-// establish a conter with number assigned to the value
-// let attemptCounter = 3;
-
-// console.log(attemptCounter)
-
-// establish a for loop, where we will subtract the number of attempts from the counter
-
-// for (attemptCounter; attemptCounter > 0; attemptCounter--) {
-
-//I need to make an event happen when the user presses a key
-//document.onkeyup = function (event) {
-// const userGuess= event.key;
-
-//here starts the conditionals
-// if(userGuess === randomNumber){
-
-//   }
-// }
-
-
-//MAY NEED TO ADD CODE MISSING ABOVE
-
-// if(randomNumber === userGuess){
-
-
-
-
-// }
