@@ -16,14 +16,11 @@ header {
     font-size: 30px;
     background-color: blueviolet;
     width: 80%;
+    line-height: 2;
 
 }
 
-audio {
-    display: block;
-    margin: auto;
-    margin-top: 3%;
-}
+
 
 #box1 {
     display: block;
