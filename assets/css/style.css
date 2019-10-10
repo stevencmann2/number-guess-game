@@ -19,6 +19,12 @@ header {
 
 }
 
+audio {
+    display: block;
+    margin: auto;
+    margin-top: 3%;
+}
+
 #box1 {
     display: block;
     background-color: blueviolet;
