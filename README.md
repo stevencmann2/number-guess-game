@@ -18,8 +18,8 @@ https://stevencmann2.github.io/number-guess-game/
 
 ## Screenshots of the App
 
-![Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-![Maven](https://maven.apache.org/) - Dependency Management
+![creenshot 1](./assets/images/pic.png)
+![After Guesses Made Screenshot](./assets/images/pic1.png)
 
 
 
